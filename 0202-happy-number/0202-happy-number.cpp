@@ -3,7 +3,7 @@ public:
     bool isHappy(int n) 
     {
         int result;
-        for (int i = 0; i <= 500; i++)
+        for (int i = 0; i <= 100; i++)
         {
             result = sumOfSquares (n);
             if (result == 1)
