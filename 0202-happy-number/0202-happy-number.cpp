@@ -15,19 +15,13 @@ public:
     
     int sumOfSquares (int n) 
     {
-        std::vector<int> digits;
         int digit;
+        int sum = 0;
         while (n != 0) 
         {
             digit = n % 10;
-            digits.push_back (digit);
+            sum += std::pow (digit, 2);
             n /= 10;
-        }
-        
-        int sum = 0;
-        for (int num : digits)
-        {
-            sum += std::pow (num, 2);
         }
         
         return sum;
